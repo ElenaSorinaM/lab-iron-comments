@@ -11,8 +11,16 @@
 </head>
 <body>
 
-    <form id="form-container">
-        Name: Email: Comment: Receive email updates? Submit
+    <form action="/some-url" method="get" id="form-container">
+        <label for="name">Name:</label>
+        <input type="text" id="name">
+        <label for="email">Email:</label>
+        <input type="email" id="email" required>
+        <label for="comment">Comment:</label>
+        <textarea id="comment" name="comment" rows="10" cols="20"></textarea>
+        <input type="checkbox" name="iron-merchan" required value="updates"/><em>Receive email updates?</em> 
+        <button type="submit">Submit</button> 
+        
     </form>
 
 </body>
